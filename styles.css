@@ -1,0 +1,120 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background: white;
+    color: black;
+    padding-top: 0%;
+    min-height: 60px;
+    border-bottom: black 3px solid;
+}
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 36px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+ header h1 img {
+            padding-top: 0px;
+            width: 100px;
+            height: auto;
+            margin-right: 450px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 10px;
+            background-color: white;
+            gap: 10px; /* Adds space between buttons */
+        }
+        
+        nav ul li {
+            margin: 0;
+        }
+        
+        nav ul li a {
+            display: block;
+            padding: 10px 20px;
+            background-color: aqua;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+            border: 2px solid #4d6c79;
+        }
+        
+        nav ul li a:hover {
+            background-color: white;
+            color: black;
+        }
+
+
+        main {
+            padding: 20px;
+            text-align: center;  /* Centers text and inline elements like images */
+        }
+        
+        main img {
+            display: block;
+            margin: 0 auto;  /* Centers the image horizontally */
+            max-width: 100%;  /* Ensures the image doesn't overflow */
+            height: auto;  /* Maintains aspect ratio */
+        }
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-box {
+    background: white;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+footer {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    padding: 10px;
+    background-color: white;
+    color: black;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-box {
+    padding: 10px 20px;
+    background-color: aqua;
+    color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+}
